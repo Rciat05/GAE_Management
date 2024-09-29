@@ -1,0 +1,6 @@
+@GAE_Management_HostAddress = http://localhost:5210
+
+GET {{GAE_Management_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
