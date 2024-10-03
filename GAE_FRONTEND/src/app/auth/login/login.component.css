@@ -1,0 +1,91 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.login-container {
+  height: 100vh;
+}
+
+.row.no-gutters {
+  height: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.left-panel {
+  background: blue;
+  color: white;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.left-panel h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.left-panel p {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.left-panel .btn {
+  background-color: white;
+  color: #0033cc;
+  border: 1px solid white;
+}
+
+.right-panel {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.login-box {
+  width: 350px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: #005ce6;
+  border-color: #005ce6;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0047b3;
+  border-color: #0047b3;
+}
