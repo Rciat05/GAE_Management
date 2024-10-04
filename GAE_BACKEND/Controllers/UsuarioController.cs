@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GAE_Management.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/usuarios")]
     [ApiController]
     public class UsuarioController : ControllerBase
     {
@@ -15,14 +15,16 @@ namespace GAE_Management.Controllers
             _usuarioService = usuarioService;
         }
 
-        [HttpGet]
+        // Ruta para obtener todos los usuarios: api/v1/usuarios/get
+        [HttpGet("get")]
         public async Task<IActionResult> GetUsuarios()
         {
             var usuarios = await _usuarioService.GetAllUsuarios();
             return Ok(usuarios);
         }
 
-        [HttpGet("{id}")]
+        // Ruta para obtener un usuario por ID: api/v1/usuarios/get/{id}
+        [HttpGet("get/{id}")]
         public async Task<IActionResult> GetUsuarioById(int id)
         {
             var usuario = await _usuarioService.GetUsuarioById(id);
@@ -30,7 +32,8 @@ namespace GAE_Management.Controllers
             return Ok(usuario);
         }
 
-        [HttpPost]
+        // Ruta para agregar un nuevo usuario: api/v1/usuarios/add
+        [HttpPost("add")]
         public async Task<IActionResult> AddUsuario([FromBody] UsuariosModel usuario)
         {
             if (!ModelState.IsValid)
@@ -38,16 +41,15 @@ namespace GAE_Management.Controllers
                 return BadRequest(ModelState);
             }
 
-            // Asigna la fecha de registro
-            usuario.FechaRegistro = DateTime.UtcNow;
-
-            // No asignes IdUsuario, ya que se auto-incrementa en la base de datos.
+            usuario.fecha_registro = DateTime.UtcNow;
             await _usuarioService.AddUsuario(usuario);
 
-            return CreatedAtAction(nameof(AddUsuario), new { id = usuario.IdUsuario }, usuario);
+            return CreatedAtAction(nameof(AddUsuario), new { id = usuario.id_usuario }, usuario);
         }
 
-        [HttpPut]
+
+        // Ruta para actualizar un usuario: api/v1/usuarios/update
+        [HttpPut("update")]
         public async Task<IActionResult> UpdateUsuario([FromBody] UsuariosModel usuario)
         {
             var result = await _usuarioService.UpdateUsuario(usuario);
@@ -55,7 +57,8 @@ namespace GAE_Management.Controllers
             return BadRequest();
         }
 
-        [HttpDelete("{id}")]
+        // Ruta para eliminar un usuario por ID: api/v1/usuarios/delete/{id}
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> DeleteUsuario(int id)
         {
             var result = await _usuarioService.DeleteUsuario(id);
@@ -63,5 +66,4 @@ namespace GAE_Management.Controllers
             return BadRequest();
         }
     }
-
 }

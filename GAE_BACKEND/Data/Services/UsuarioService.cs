@@ -18,7 +18,7 @@ namespace GAE_Management.Data.Services
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                var sql = "SELECT * FROM Usuarios";
+                var sql = "SELECT id_usuario, correo, contrasena, tipo_usuario, fecha_registro FROM Usuarios";
                 return await db.QueryAsync<UsuariosModel>(sql);
             }
         }
@@ -27,26 +27,28 @@ namespace GAE_Management.Data.Services
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                var sql = "SELECT * FROM Usuarios WHERE id_usuario = @Id";
+                var sql = "SELECT Id_usuario, correo, contrasena, tipo_usuario, fecha_registro FROM Usuarios WHERE Id_usuario = @Id";
                 return await db.QueryFirstOrDefaultAsync<UsuariosModel>(sql, new { Id = id });
             }
         }
 
         public async Task<int> AddUsuario(UsuariosModel usuario)
         {
-            var query = "INSERT INTO Usuarios (correo, contrasena, tipo_usuario, fecha_registro) VALUES (@Correo, @Contrasena, @TipoUsuario, @FechaRegistro); SELECT CAST(SCOPE_IDENTITY() as int);";
+            var query = @"INSERT INTO Usuarios (correo, Contrasena, tipo_usuario, fecha_registro) 
+                          VALUES (@correo, @Contrasena, @tipo_usuario, @fecha_registro); 
+                          SELECT CAST(SCOPE_IDENTITY() as int);";
 
             using (var connection = new SqlConnection(_connectionString))
             {
                 var id = await connection.ExecuteScalarAsync<int>(query, new
                 {
-                    Correo = usuario.Correo,
-                    Contrasena = usuario.Contrasena,
-                    TipoUsuario = usuario.TipoUsuario,
-                    FechaRegistro = usuario.FechaRegistro
+                    correo = usuario.correo,
+                    Contrasena = usuario.contrasena,
+                    tipo_usuario = usuario.tipo_usuario,
+                    fecha_registro = usuario.fecha_registro
                 });
 
-                usuario.IdUsuario = id;
+                usuario.id_usuario = id;
 
                 return id; // Asegúrate de devolver el ID del usuario insertado
             }
@@ -57,8 +59,8 @@ namespace GAE_Management.Data.Services
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
                 var sql = @"UPDATE Usuarios 
-                            SET correo = @Correo, contrasena = @Contrasena, tipo_usuario = @TipoUsuario 
-                            WHERE id_usuario = @IdUsuario";
+                            SET correo = @correo, contrasena = @contrasena, tipo_usuario = @tipo_usuario 
+                            WHERE id_usuario = @id_usuario";
                 return await db.ExecuteAsync(sql, usuario);
             }
         }
@@ -67,7 +69,7 @@ namespace GAE_Management.Data.Services
         {
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
-                var sql = "DELETE FROM Usuarios WHERE id_usuario = @Id";
+                var sql = "DELETE FROM Usuarios WHERE Id_usuario = @Id";
                 return await db.ExecuteAsync(sql, new { Id = id });
             }
         }

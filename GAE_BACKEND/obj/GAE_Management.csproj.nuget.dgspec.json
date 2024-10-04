@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desktop\\Escritorio 2024\\Ciclo 2\\Arquitectura de software\\Tareas\\GAE_Management\\GAE_Management.csproj": {}
+    "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj": {}
   },
   "projects": {
-    "C:\\Desktop\\Escritorio 2024\\Ciclo 2\\Arquitectura de software\\Tareas\\GAE_Management\\GAE_Management.csproj": {
+    "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Desktop\\Escritorio 2024\\Ciclo 2\\Arquitectura de software\\Tareas\\GAE_Management\\GAE_Management.csproj",
+        "projectUniqueName": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj",
         "projectName": "GAE_Management",
-        "projectPath": "C:\\Desktop\\Escritorio 2024\\Ciclo 2\\Arquitectura de software\\Tareas\\GAE_Management\\GAE_Management.csproj",
+        "projectPath": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj",
         "packagesPath": "C:\\Users\\Juan Carlos Iglesias\\.nuget\\packages\\",
-        "outputPath": "C:\\Desktop\\Escritorio 2024\\Ciclo 2\\Arquitectura de software\\Tareas\\GAE_Management\\obj\\",
+        "outputPath": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan Carlos Iglesias\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.10.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
