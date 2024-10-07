@@ -11,5 +11,6 @@ namespace GAE_Management.Data
         }
 
         public DbSet<UsuariosModel> Usuarios { get; set; }
+        public DbSet<EstudianteModel> Estudiantes { get; set; }
     }
 }

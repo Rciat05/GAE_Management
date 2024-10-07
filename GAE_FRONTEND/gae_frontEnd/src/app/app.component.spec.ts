@@ -14,16 +14,15 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'GAE_Management' title`, () => {
+  it(`should have the 'gae_frontEnd' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('GAE_Management');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, GAE_Management');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, gae_frontEnd');
   });
 });

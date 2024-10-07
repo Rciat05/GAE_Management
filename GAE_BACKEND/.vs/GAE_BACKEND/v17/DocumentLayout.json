@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\EstudianteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\EstudianteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\UsuariosModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\ReporteProblemaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteGeneradoModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\ReporteGeneradoModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GAE_Management.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GAE_Management.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -14,11 +38,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosModel.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs",
+              "RelativeDocumentMoniker": "Model\\UsuariosModel.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs",
+              "RelativeToolTip": "Model\\UsuariosModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:27:37.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReporteProblemaModel.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs",
+              "RelativeDocumentMoniker": "Model\\ReporteProblemaModel.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs",
+              "RelativeToolTip": "Model\\ReporteProblemaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:27:36.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReporteGeneradoModel.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteGeneradoModel.cs",
+              "RelativeDocumentMoniker": "Model\\ReporteGeneradoModel.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteGeneradoModel.cs",
+              "RelativeToolTip": "Model\\ReporteGeneradoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:25:25.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EstudianteModel.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\EstudianteModel.cs",
+              "RelativeDocumentMoniker": "Model\\EstudianteModel.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\EstudianteModel.cs",
+              "RelativeToolTip": "Model\\EstudianteModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:25:24.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GAE_Management.http",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.http",
+              "RelativeDocumentMoniker": "GAE_Management.http",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.http",
+              "RelativeToolTip": "GAE_Management.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-06T22:25:11.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GAE_Management.csproj.user",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj.user",
+              "RelativeDocumentMoniker": "GAE_Management.csproj.user",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj.user",
+              "RelativeToolTip": "GAE_Management.csproj.user",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-10-06T22:25:10.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -26,8 +127,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-29T20:06:11.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T20:06:11.411Z"
             }
           ]
         }

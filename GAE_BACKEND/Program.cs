@@ -2,6 +2,7 @@ using FluentValidation;
 using GAE_Management.Data;
 using GAE_Management.Data.Services;
 using GAE_Management.Model;
+using GAE_Management.Service;
 using GAE_Management.Validators;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,14 +15,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+//************************* VALIDACIONES **************************
 builder.Services.AddScoped<IValidator<UsuariosModel>, UsuarioValidator>();
+builder.Services.AddScoped<IValidator<EstudianteModel>, EstudianteValidator>();
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("default")));
 
+//SERVICIOS
 builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<EstudianteService>();
 
 var app = builder.Build();
 

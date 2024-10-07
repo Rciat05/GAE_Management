@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "GAE_Management.Controllers.EstudianteController",
+    "Method": "ObtenerEstudiantePorCarnet",
+    "RelativePath": "api/v1/Estudiantes/{carnet}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carnet",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.EstudianteController",
+    "Method": "CrearEstudiante",
+    "RelativePath": "api/v1/Estudiantes/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estudiante",
+        "Type": "GAE_Management.Model.EstudianteModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.EstudianteController",
+    "Method": "EliminarEstudiante",
+    "RelativePath": "api/v1/Estudiantes/delete/{carnet}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carnet",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.EstudianteController",
+    "Method": "GetAllEstudiantes",
+    "RelativePath": "api/v1/Estudiantes/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.EstudianteController",
+    "Method": "ActualizarEstudiante",
+    "RelativePath": "api/v1/Estudiantes/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estudiante",
+        "Type": "GAE_Management.Model.EstudianteModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GAE_Management.Controllers.UsuarioController",
     "Method": "AddUsuario",
     "RelativePath": "api/v1/usuarios/add",
