@@ -74,6 +74,80 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "GAE_Management.Controllers.ReporteProblemaController",
+    "Method": "ObtenerReportePorId",
+    "RelativePath": "api/v1/ReportesProblemas/{idReporte}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idReporte",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.ReporteProblemaController",
+    "Method": "CrearReporteProblema",
+    "RelativePath": "api/v1/ReportesProblemas/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reporte",
+        "Type": "GAE_Management.Model.ReporteProblemaModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.ReporteProblemaController",
+    "Method": "EliminarReporteProblema",
+    "RelativePath": "api/v1/ReportesProblemas/delete/{idReporte}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idReporte",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.ReporteProblemaController",
+    "Method": "GetAllReportesProblemas",
+    "RelativePath": "api/v1/ReportesProblemas/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.ReporteProblemaController",
+    "Method": "ActualizarReporteProblema",
+    "RelativePath": "api/v1/ReportesProblemas/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reporte",
+        "Type": "GAE_Management.Model.ReporteProblemaModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "GAE_Management.Controllers.UsuarioController",
     "Method": "AddUsuario",
     "RelativePath": "api/v1/usuarios/add",
@@ -126,6 +200,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "api/v1/usuarios/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "GAE_Management.Model.UsuariosModel",
         "IsRequired": true
       }
     ],

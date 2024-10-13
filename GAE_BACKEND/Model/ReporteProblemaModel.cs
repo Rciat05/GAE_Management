@@ -2,10 +2,10 @@
 {
     public class ReporteProblemaModel
     {
-        public int IdReporte { get; set; }
-        public int IdUsuario { get; set; }
-        public string Descripcion { get; set; }
-        public DateTime FechaReporte { get; set; }
-        public string Estado { get; set; }
+        public int id_reporte { get; set; }
+        public int id_usuario { get; set; }
+        public string descripcion { get; set; }
+        public DateTime fecha_reporte { get; set; }
+        public string estado { get; set; }
     }
 }

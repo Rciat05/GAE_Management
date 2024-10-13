@@ -73,5 +73,19 @@ namespace GAE_Management.Data.Services
                 return await db.ExecuteAsync(sql, new { Id = id });
             }
         }
+
+        public async Task<UsuariosModel> GetUsuarioByEmailAndPassword(string correo, string contrasena)
+        {
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                var sql = @"SELECT id_usuario, correo, contrasena, tipo_usuario, fecha_registro 
+                    FROM Usuarios 
+                    WHERE correo = @correo AND contrasena = @contrasena";
+
+                return await db.QueryFirstOrDefaultAsync<UsuariosModel>(sql, new { correo, contrasena });
+            }
+        }
+
+
     }
 }

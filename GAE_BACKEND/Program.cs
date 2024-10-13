@@ -18,6 +18,7 @@ builder.Services.AddSwaggerGen();
 //************************* VALIDACIONES **************************
 builder.Services.AddScoped<IValidator<UsuariosModel>, UsuarioValidator>();
 builder.Services.AddScoped<IValidator<EstudianteModel>, EstudianteValidator>();
+builder.Services.AddScoped<IValidator<ReporteProblemaModel>, ReporteProblemaValidator>();
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -26,6 +27,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //SERVICIOS
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<EstudianteService>();
+builder.Services.AddScoped<ReporteProblemaService>();
 
 var app = builder.Build();
 

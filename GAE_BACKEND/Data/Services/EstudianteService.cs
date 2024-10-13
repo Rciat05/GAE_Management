@@ -41,7 +41,7 @@ namespace GAE_Management.Service
                 parameters.Add("@Carrera", estudiante.Carrera);
                 parameters.Add("@Modalidad", estudiante.Modalidad);
                 parameters.Add("@correo_estudiante", estudiante.correo_estudiante);
-                parameters.Add("@IdUsuario", estudiante.IdUsuario);
+                parameters.Add("@IdUsuario", estudiante.id_usuario);
 
                 connection.Execute(query, parameters, commandType: CommandType.StoredProcedure);
             }
@@ -72,7 +72,7 @@ namespace GAE_Management.Service
                 parameters.Add("@Carrera", estudiante.Carrera);
                 parameters.Add("@Modalidad", estudiante.Modalidad);
                 parameters.Add("@correo_estudiante", estudiante.correo_estudiante);
-                parameters.Add("@IdUsuario", estudiante.IdUsuario);
+                parameters.Add("@IdUsuario", estudiante.id_usuario);
 
                 connection.Execute(query, parameters, commandType: CommandType.StoredProcedure);
             }

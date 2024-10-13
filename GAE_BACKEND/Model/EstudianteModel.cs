@@ -9,6 +9,6 @@
         public string Carrera { get; set; }
         public string Modalidad { get; set; }
         public string correo_estudiante { get; set; }
-        public int IdUsuario { get; set; }
+        public int id_usuario { get; set; }
     }
 }
