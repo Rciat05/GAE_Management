@@ -6,6 +6,6 @@ export interface EstudianteModel {
     carrera: String;
     modalidad: String;
     correo_estudiante: String;
-    idUsuario: Int16Array;
+    idUsuario: number;
   }
   

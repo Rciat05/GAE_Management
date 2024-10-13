@@ -1,17 +1,29 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, NgModule } from '@angular/core';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { UsuarioService } from './Services/usuario.service';
+import { LoginComponent } from "./login/login.component";
+import { BrowserModule } from '@angular/platform-browser';
+import { UsuariosComponent } from './usuarios-component/usuarios-component.component';
+import { FormsModule } from '@angular/forms';
+import { routes } from './app.routes';
 
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: 'app.component.html',
-  styleUrl: 'app.component.css'
+@NgModule({
+  declarations: [
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot([]),
+    AppComponent,
+    LoginComponent,
+    UsuariosComponent
+  ],
+  providers: [UsuarioService],
+  bootstrap: [AppComponent]
 })
+
 export class AppComponent {
-  onSubmit() {
-    console.log('Formulario enviado');
-  }
+  
 }
