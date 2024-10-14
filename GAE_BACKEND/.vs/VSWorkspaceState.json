@@ -4,8 +4,9 @@
     "\\Controllers",
     "\\Data",
     "\\Data\\Services",
-    "\\Model"
+    "\\Model",
+    "\\Validators"
   ],
-  "SelectedNode": "\\appsettings.json",
+  "SelectedNode": "\\Validators\\UsuarioValidator.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -36,7 +36,7 @@ namespace GAE_Management.Service
                 var parameters = new DynamicParameters();
                 parameters.Add("@id_usuario", reporte.id_usuario);
                 parameters.Add("@descripcion", reporte.descripcion);
-                parameters.Add("@estado", reporte.estado); // FechaReporte no es necesario agregarlo
+                parameters.Add("@estado", reporte.estado);
 
                 connection.Execute(query, parameters, commandType: CommandType.StoredProcedure);
             }
