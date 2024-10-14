@@ -1,9 +1,11 @@
 ﻿using GAE_Management.Model;
 using GAE_Management.Service;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GAE_Management.Controllers
 {
+    [EnableCors("ReglasCors")]
     [Route("api/v1/Estudiantes")]
     [ApiController]
     public class EstudianteController : ControllerBase

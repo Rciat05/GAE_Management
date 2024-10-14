@@ -1,21 +1,11 @@
-import { Component, NgModule } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-import { UsuarioService } from './Services/usuario.service';
+import { Component } from '@angular/core';
 import { LoginComponent } from "./login/login.component";
-import { BrowserModule } from '@angular/platform-browser';
-import { UsuariosComponent } from './usuarios-component/usuarios-component.component';
-import { FormsModule } from '@angular/forms';
-import { routes } from './app.routes';
-
-
-@NgModule({ declarations: [],
-    bootstrap: [AppComponent], imports: [BrowserModule,
-        RouterModule.forRoot([]),
-        AppComponent,
-        LoginComponent,
-        UsuariosComponent], providers: [UsuarioService, provideHttpClient(withInterceptorsFromDi())] })
-
-export class AppComponent {
-  
-}
+@Component({
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    imports: [LoginComponent],
+  })
+  export class AppComponent {
+    title = 'GAE_FRONTEND';
+  }

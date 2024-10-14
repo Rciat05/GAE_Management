@@ -24,6 +24,15 @@ builder.Services.AddScoped<IValidator<ReporteProblemaModel>, ReporteProblemaVali
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("default")));
 
+var misReglasCors = "ReglasCors";
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy(name: misReglasCors, builder =>
+    {
+        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
+
 //SERVICIOS
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<EstudianteService>();
@@ -32,11 +41,15 @@ builder.Services.AddScoped<ReporteProblemaService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+app.UseSwagger();
+app.UseSwaggerUI();
+
+app.UseCors(misReglasCors);
 
 app.UseHttpsRedirection();
 

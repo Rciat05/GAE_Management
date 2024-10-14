@@ -1,9 +1,11 @@
 ﻿using GAE_Management.Data.Services;
 using GAE_Management.Model;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GAE_Management.Controllers
 {
+    [EnableCors("ReglasCors")]
     [Route("api/v1/usuarios")]
     [ApiController]
     public class UsuarioController : ControllerBase
@@ -70,6 +72,9 @@ namespace GAE_Management.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UsuariosModel loginRequest)
         {
+
+            Console.WriteLine($"Correo: {loginRequest.correo}, Contraseña: {loginRequest.contrasena}");
+
             var usuario = await _usuarioService.GetUsuarioByEmailAndPassword(loginRequest.correo, loginRequest.contrasena);
             if (usuario == null)
             {

@@ -39,10 +39,11 @@ export class UsuarioService {
     return this.http.delete<void>(`${this.apiUrl}/delete/${id}`);
   }
 
-  // En tu archivo usuario.service.ts
+
   login(correo: string, contrasena: string): Observable<UsuarioModel> {
-  const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-  return this.http.post<UsuarioModel>(`${this.apiUrl}/login`, { correo, contrasena }, { headers });
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    return this.http.post<UsuarioModel>(`${this.apiUrl}/login`, { correo, contrasena }, { headers });
   }
+  
 
 }

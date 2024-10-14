@@ -508,3 +508,4 @@ C:\Desktop\Angular\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\GAE_Management.pd
 C:\Desktop\Angular\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\GAE_Management.genruntimeconfig.cache
 C:\Desktop\Angular\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\ref\GAE_Management.dll
 C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\FluentValidation.dll
+C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\System.Web.Cors.dll
