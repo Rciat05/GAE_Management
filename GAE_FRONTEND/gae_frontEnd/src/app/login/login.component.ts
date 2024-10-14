@@ -23,7 +23,6 @@ export class LoginComponent {
     // Llamar al servicio de autenticación...
     this.usuarioService.login(this.correo, this.contrasena).subscribe(
       (data) => {
-        // Si el login es exitoso, redirige al dashboard u otra página
         this.router.navigate(['/dashboard']);
       },
       (error) => {
