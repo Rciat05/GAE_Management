@@ -1,0 +1,64 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Gestión de Usuarios</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="correo" class="form-label">Correo:</label>
+      <input
+        type="email"
+        id="correo"
+        class="form-control"
+        [(ngModel)]="usuario.correo"
+        name="correo"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="contrasena" class="form-label">Contraseña:</label>
+      <input
+        type="password"
+        id="contrasena"
+        class="form-control"
+        [(ngModel)]="usuario.contrasena"
+        name="contrasena"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="tipo_usuario" class="form-label">Tipo de Usuario:</label>
+      <select
+        id="tipo_usuario"
+        class="form-control"
+        [(ngModel)]="usuario.tipo_usuario"
+        name="tipo_usuario"
+        required
+      >
+        <option value="administrador">Administrador</option>
+        <option value="profesor">Profesor</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar Usuario</button>
+  </form>
+
+  <h3 class="mt-5">Listado de Usuarios</h3>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Correo</th>
+        <th>Tipo de Usuario</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id_usuario }}</td>
+        <td>{{ usuario.correo }}</td>
+        <td>{{ usuario.tipo_usuario }}</td>
+        <td>
+          <button (click)="editUsuario(usuario)">Editar</button>
+          <button (click)="deleteUsuario(usuario.id_usuario)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
