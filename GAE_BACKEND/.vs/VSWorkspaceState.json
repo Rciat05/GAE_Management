@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
-    "\\Data",
-    "\\Data\\Services",
-    "\\Model",
-    "\\Validators"
+    "\\Data\\Services"
   ],
-  "SelectedNode": "\\Controllers\\EstudianteController.cs",
+  "SelectedNode": "\\GAE_Management.sln",
   "PreviewInSolutionExplorer": false
 }

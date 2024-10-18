@@ -90,7 +90,8 @@
               "RelativeToolTip": "Model\\EstudianteModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T23:06:37.946Z"
+              "WhenOpened": "2024-10-06T23:06:37.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -102,8 +103,7 @@
               "RelativeToolTip": "Controllers\\EstudianteController.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwCAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T22:50:52.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T22:50:52.897Z"
             },
             {
               "$type": "Document",
@@ -113,7 +113,7 @@
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAUwEoAAAAkAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAUwEoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T22:51:43.755Z",
               "EditorCaption": ""
@@ -167,8 +167,7 @@
               "RelativeToolTip": "Validators\\LoginRequestValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T02:06:11.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T02:06:11.31Z"
             },
             {
               "$type": "Document",
@@ -180,7 +179,8 @@
               "RelativeToolTip": "Data\\Services\\EstudianteService.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAkwEcAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T23:03:53.621Z"
+              "WhenOpened": "2024-10-06T23:03:53.621Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -216,7 +216,8 @@
               "RelativeToolTip": "Data\\Services\\UsuarioService.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAYwEgAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T23:03:55.014Z"
+              "WhenOpened": "2024-10-06T23:03:55.014Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -252,7 +253,8 @@
               "RelativeToolTip": "Data\\Services\\ReporteProblemaService.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAkwAsAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T20:14:47.454Z"
+              "WhenOpened": "2024-10-13T20:14:47.454Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
