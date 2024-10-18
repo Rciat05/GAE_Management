@@ -8,7 +8,7 @@ import { UsuarioModel } from '../Models/usuario.model';
 })
 export class UsuarioService {
 
-  private apiUrl = 'https://localhost:5001/api/v1/usuarios';  // URL de tu API backend
+  private apiUrl = 'http://localhost:5210/api/v1/usuarios';  
 
   constructor(private http: HttpClient) { }
 
@@ -42,6 +42,7 @@ export class UsuarioService {
 
   login(correo: string, contrasena: string): Observable<UsuarioModel> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    console.log("Correo:", correo, "Contraseña:", contrasena);  // Verifica los valores enviados
     return this.http.post<UsuarioModel>(`${this.apiUrl}/login`, { correo, contrasena }, { headers });
   }
   

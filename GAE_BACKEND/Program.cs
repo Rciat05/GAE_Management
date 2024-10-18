@@ -20,7 +20,6 @@ builder.Services.AddScoped<IValidator<UsuariosModel>, UsuarioValidator>();
 builder.Services.AddScoped<IValidator<EstudianteModel>, EstudianteValidator>();
 builder.Services.AddScoped<IValidator<ReporteProblemaModel>, ReporteProblemaValidator>();
 
-
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("default")));
 
@@ -29,7 +28,9 @@ builder.Services.AddCors(opt =>
 {
     opt.AddPolicy(name: misReglasCors, builder =>
     {
-        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+        builder.WithOrigins("http://localhost:4200")
+               .AllowAnyHeader()
+               .AllowAnyMethod();
     });
 });
 

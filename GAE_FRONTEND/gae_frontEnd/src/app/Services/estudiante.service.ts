@@ -8,7 +8,7 @@ import { EstudianteModel } from '../Models/estudiante.model';
   providedIn: 'root'
 })
 export class EstudianteService {
-  private apiUrl = 'https://localhost:5001/api/v1/Estudiantes'; // Cambia a la URL de tu API
+  private apiUrl = 'http://localhost:5210/api/v1/Estudiantes'; 
 
   constructor(private http: HttpClient) { }
 

@@ -18,6 +18,21 @@ export class LoginComponent {
 
   
   onSubmit(): void {
+
+    const correoTest = "Alumno@example.com";  // Usa un correo existente de la BD
+  const contrasenaTest = "Contra123";   // Usa una contraseña correcta
+
+  this.usuarioService.login(correoTest, contrasenaTest).subscribe(
+    (data) => {
+      console.log("Login exitoso", data);
+      this.router.navigate(['/dashboard']);
+    },
+    (error) => {
+      console.error('Login fallido', error);
+      alert('Correo o contraseña incorrectos');
+    }
+  );
+
     console.log('Correo:', this.correo);
     console.log('Contraseña:', this.contrasena);
     // Llamar al servicio de autenticación...
@@ -32,5 +47,7 @@ export class LoginComponent {
       }
     );
   }
+
+  
 
 }
