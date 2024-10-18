@@ -1,49 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\",
+  "WorkspaceRootPath": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\UsuarioController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Data\\Services\\ReporteProblemaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\ReporteProblemaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Services\\ReporteProblemaService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Data\\Services\\EstudianteService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\EstudianteService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Services\\EstudianteService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Data\\Services\\UsuarioService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\UsuarioService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Services\\UsuarioService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\EstudianteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\EstudianteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\EstudianteModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Validators\\ReporteProblemaValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Validators\\ReporteProblemaValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Validators\\ReporteProblemaValidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\ReporteProblemaModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Model\\UsuariosModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\EstudianteController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\EstudianteController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\EstudianteController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\ReporteProblemaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\ReporteProblemaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\ReporteProblemaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,15 +58,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 7,
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-18T17:48:03.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T03:45:18.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "Data\\Services\\UsuarioService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwDQAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T21:48:05.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EstudianteModel.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\EstudianteModel.cs",
+              "RelativeDocumentMoniker": "Model\\EstudianteModel.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\EstudianteModel.cs",
+              "RelativeToolTip": "Model\\EstudianteModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T21:47:54.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+>>>>>>> 34f6610e8569780e6b0466e7c4cdfe29872abbea
               "Title": "ReporteProblemaModel.cs",
-              "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs",
               "RelativeDocumentMoniker": "Model\\ReporteProblemaModel.cs",
-              "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs",
               "RelativeToolTip": "Model\\ReporteProblemaModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -70,11 +131,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EstudianteService.cs",
-              "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Data\\Services\\EstudianteService.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\EstudianteService.cs",
               "RelativeDocumentMoniker": "Data\\Services\\EstudianteService.cs",
-              "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Data\\Services\\EstudianteService.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\EstudianteService.cs",
               "RelativeToolTip": "Data\\Services\\EstudianteService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAF0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -82,11 +143,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ReporteProblemaService.cs",
-              "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Data\\Services\\ReporteProblemaService.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\ReporteProblemaService.cs",
               "RelativeDocumentMoniker": "Data\\Services\\ReporteProblemaService.cs",
-              "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Data\\Services\\ReporteProblemaService.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Data\\Services\\ReporteProblemaService.cs",
               "RelativeToolTip": "Data\\Services\\ReporteProblemaService.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAIwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -94,19 +155,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAD8AAAAAAAAAAAAUwFMAAAAdAAAAAAAAAA==",
+=======
+              "ViewState": "AQIAACcAAAAAAAAAAAAUwD8AAAA+AAAA",
+>>>>>>> 34f6610e8569780e6b0466e7c4cdfe29872abbea
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T21:47:20.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T21:47:20.783Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "EstudianteModel.cs",
               "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\EstudianteModel.cs",
@@ -144,10 +209,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 7,
+>>>>>>> 34f6610e8569780e6b0466e7c4cdfe29872abbea
               "Title": "ReporteProblemaValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Validators\\ReporteProblemaValidator.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Validators\\ReporteProblemaValidator.cs",
               "RelativeDocumentMoniker": "Validators\\ReporteProblemaValidator.cs",
-              "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Validators\\ReporteProblemaValidator.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Validators\\ReporteProblemaValidator.cs",
               "RelativeToolTip": "Validators\\ReporteProblemaValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,11 +223,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UsuariosModel.cs",
-              "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs",
               "RelativeDocumentMoniker": "Model\\UsuariosModel.cs",
-              "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs",
               "RelativeToolTip": "Model\\UsuariosModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -167,11 +235,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "EstudianteController.cs",
-              "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\EstudianteController.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\EstudianteController.cs",
               "RelativeDocumentMoniker": "Controllers\\EstudianteController.cs",
-              "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\EstudianteController.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\EstudianteController.cs",
               "RelativeToolTip": "Controllers\\EstudianteController.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAADQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -179,11 +247,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ReporteProblemaController.cs",
-              "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\ReporteProblemaController.cs",
+              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\ReporteProblemaController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReporteProblemaController.cs",
-              "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\ReporteProblemaController.cs",
+              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\ReporteProblemaController.cs",
               "RelativeToolTip": "Controllers\\ReporteProblemaController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
