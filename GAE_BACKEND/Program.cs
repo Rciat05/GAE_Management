@@ -19,6 +19,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IValidator<UsuariosModel>, UsuarioValidator>();
 builder.Services.AddScoped<IValidator<EstudianteModel>, EstudianteValidator>();
 builder.Services.AddScoped<IValidator<ReporteProblemaModel>, ReporteProblemaValidator>();
+builder.Services.AddScoped<IValidator<LoginRequest>, LoginRequestValidator>();
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("default")));

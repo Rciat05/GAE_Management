@@ -1,8 +1,8 @@
 export interface UsuarioModel{
     id_usuario: number;
-    correo: String;
-    contrasena: String;
-    tipo_usuario: String;
+    correo: string;
+    contrasena: string;
+    tipo_usuario: string;
     fecha_registro: Date;
 
 }

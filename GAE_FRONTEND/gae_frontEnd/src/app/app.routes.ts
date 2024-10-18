@@ -1,10 +1,9 @@
-
 import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { UsuariosComponent } from './usuario/usuarios.component';
+import { EstudiantesComponent } from './estudiantes/estudiantes.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'usuarios', component: UsuariosComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  { path: 'estudiantes', component: EstudiantesComponent },  // Ruta para los estudiantes
+  { path: '', redirectTo: '/login', pathMatch: 'full' }  // Redirige al login por defecto
 ];

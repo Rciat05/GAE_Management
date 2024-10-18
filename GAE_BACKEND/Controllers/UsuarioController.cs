@@ -70,17 +70,21 @@ namespace GAE_Management.Controllers
 
         // Ruta para validar el login: api/v1/usuarios/login
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] UsuariosModel loginRequest)
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
-
-            Console.WriteLine($"Correo: {loginRequest.correo}, Contraseña: {loginRequest.contrasena}");
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
             var usuario = await _usuarioService.GetUsuarioByEmailAndPassword(loginRequest.correo, loginRequest.contrasena);
+
             if (usuario == null)
             {
                 return Unauthorized(); // Si el usuario no existe o la contraseña no es correcta
             }
-            return Ok(usuario); // Si las credenciales son correctas, devuelve el usuario
+
+            return Ok(usuario); // Si las credenciales son correctas
         }
 
 

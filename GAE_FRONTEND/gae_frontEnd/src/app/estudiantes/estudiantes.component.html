@@ -1,0 +1,35 @@
+<div class="container mt-5">
+
+    <div class="d-flex justify-content-start mt-3">
+        <button class="btn btn-primary">Agregar Estudiante</button>
+      </div>
+
+    <h2 class="text-center mb-4">Listado de Estudiantes</h2>
+    
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Carnet</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Teléfono</th>
+          <th>Carrera</th>
+          <th>Modalidad</th>
+          <th>Correo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let estudiante of estudiantes">
+          <td>{{ estudiante.carnet }}</td>
+          <td>{{ estudiante.nombre }}</td>
+          <td>{{ estudiante.apellido }}</td>
+          <td>{{ estudiante.telefono }}</td>
+          <td>{{ estudiante.carrera }}</td>
+          <td>{{ estudiante.modalidad }}</td>
+          <td>{{ estudiante.correo_estudiante }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
+  

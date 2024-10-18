@@ -19,35 +19,22 @@ export class LoginComponent {
   
   onSubmit(): void {
 
-    const correoTest = "Alumno@example.com";  // Usa un correo existente de la BD
-  const contrasenaTest = "Contra123";   // Usa una contraseña correcta
-
-  this.usuarioService.login(correoTest, contrasenaTest).subscribe(
-    (data) => {
-      console.log("Login exitoso", data);
-      this.router.navigate(['/dashboard']);
-    },
-    (error) => {
-      console.error('Login fallido', error);
-      alert('Correo o contraseña incorrectos');
-    }
-  );
-
     console.log('Correo:', this.correo);
     console.log('Contraseña:', this.contrasena);
-    // Llamar al servicio de autenticación...
+  
+    // Esta es la única llamada correcta al servicio de login
     this.usuarioService.login(this.correo, this.contrasena).subscribe(
       (data) => {
-        this.router.navigate(['/dashboard']);
+        console.log("Login exitoso", data);
+        this.router.navigate(['/estudiantes']);
       },
       (error) => {
-        // Si el login falla, muestra un mensaje de error
-        console.error('Login failed', error);
+        console.error('Login fallido', error);
+        console.log('Errores de validación:', error.error.errors);
         alert('Correo o contraseña incorrectos');
       }
     );
   }
 
-  
 
 }

@@ -42,9 +42,12 @@ export class UsuarioService {
 
   login(correo: string, contrasena: string): Observable<UsuarioModel> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    console.log("Correo:", correo, "Contraseña:", contrasena);  // Verifica los valores enviados
-    return this.http.post<UsuarioModel>(`${this.apiUrl}/login`, { correo, contrasena }, { headers });
-  }
+    return this.http.post<UsuarioModel>(`${this.apiUrl}/login`, { 
+        correo: correo, 
+        contrasena: contrasena 
+    }, { headers });
+}
+
   
 
 }

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { LoginComponent } from "./login/login.component";
+import { RouterModule } from '@angular/router'; 
 @Component({
-    selector: 'app-root',
-    standalone: true,
-    templateUrl: './app.component.html',
-    imports: [LoginComponent],
-  })
-  export class AppComponent {
-    title = 'GAE_FRONTEND';
-  }
+  selector: 'app-root',
+  standalone: true,
+  templateUrl: './app.component.html',
+  imports: [RouterModule], 
+})
+export class AppComponent {
+  title = 'GAE_FRONTEND';
+}

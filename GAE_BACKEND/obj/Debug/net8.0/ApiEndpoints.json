@@ -215,7 +215,7 @@
     "Parameters": [
       {
         "Name": "loginRequest",
-        "Type": "GAE_Management.Model.UsuariosModel",
+        "Type": "GAE_Management.Model.LoginRequest",
         "IsRequired": true
       }
     ],

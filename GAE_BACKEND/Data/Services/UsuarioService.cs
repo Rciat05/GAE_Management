@@ -80,11 +80,26 @@ namespace GAE_Management.Data.Services
             {
                 var sql = @"SELECT id_usuario, correo, contrasena, tipo_usuario, fecha_registro 
                     FROM Usuarios 
-                    WHERE correo = @correo AND contrasena = @contrasena";
+                    WHERE correo = @correo";
 
-                return await db.QueryFirstOrDefaultAsync<UsuariosModel>(sql, new { correo, contrasena });
+                var usuario = await db.QueryFirstOrDefaultAsync<UsuariosModel>(sql, new { correo });
+
+                if (usuario != null)
+                {
+                    
+                    if (usuario.contrasena == contrasena) 
+                    {
+                        return usuario; 
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                return null; 
             }
         }
+
 
 
     }
