@@ -36,5 +36,9 @@ export class LoginComponent {
     );
   }
 
+  irSobreGAE(): void {
+    this.router.navigate(['/about']); 
+  }
+
 
 }
