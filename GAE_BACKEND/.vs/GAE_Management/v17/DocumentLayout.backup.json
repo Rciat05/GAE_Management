@@ -125,7 +125,7 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-06T23:27:42.683Z",
               "EditorCaption": ""
@@ -177,52 +177,10 @@
               "RelativeToolTip": "Model\\EstudianteModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T23:06:37.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T23:06:37.946Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 5,
-              "Title": "EstudianteController.cs",
-              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\EstudianteController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EstudianteController.cs",
-              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\EstudianteController.cs",
-              "RelativeToolTip": "Controllers\\EstudianteController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwCAAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T22:50:52.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAUwEoAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T22:51:43.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuariosModel.cs",
-              "DocumentMoniker": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs",
-              "RelativeDocumentMoniker": "Model\\UsuariosModel.cs",
-              "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Model\\UsuariosModel.cs",
-              "RelativeToolTip": "Model\\UsuariosModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T21:04:24.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-=======
->>>>>>> 6013f1805115c632c7388180fc8282985103c923
               "DocumentIndex": 3,
               "Title": "LoginRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Validators\\LoginRequestValidator.cs",
@@ -243,8 +201,7 @@
               "RelativeToolTip": "Data\\Services\\EstudianteService.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAkwEcAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T23:03:53.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T23:03:53.621Z"
             },
             {
               "$type": "Document",
@@ -268,8 +225,7 @@
               "RelativeToolTip": "Data\\Services\\UsuarioService.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAYwEgAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T23:03:55.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-06T23:03:55.014Z"
             },
             {
               "$type": "Document",
@@ -293,8 +249,7 @@
               "RelativeToolTip": "Data\\Services\\ReporteProblemaService.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAkwAsAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T20:14:47.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T20:14:47.454Z"
             },
             {
               "$type": "Document",

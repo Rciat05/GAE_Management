@@ -3,6 +3,10 @@
     "",
     "\\Controllers"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\appsettings.json",
+=======
+  "SelectedNode": "\\GAE_Management.sln",
+>>>>>>> 6013f1805115c632c7388180fc8282985103c923
   "PreviewInSolutionExplorer": false
 }
