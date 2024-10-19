@@ -1,15 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-<<<<<<< HEAD
-    "\\Controllers",
-    "\\Data",
-    "\\Data\\Services",
-    "\\Model"
-=======
-    "\\Controllers"
->>>>>>> fc3192dfaec5728d513184ba1369342b52eeff0a
+    ""
   ],
-  "SelectedNode": "\\appsettings.json",
+  "SelectedNode": "\\GAE_Management.sln",
   "PreviewInSolutionExplorer": false
 }
