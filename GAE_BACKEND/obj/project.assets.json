@@ -8341,25 +8341,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\chafm\\.nuget\\packages\\": {}
-=======
     "C:\\Users\\ezequ\\.nuget\\packages\\": {}
->>>>>>> 6799eae37a578a7473877074e405cba0832b37d3
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\chafm\\OneDrive\\Escritorio\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj",
-      "projectName": "GAE_Management",
-      "projectPath": "C:\\Users\\chafm\\OneDrive\\Escritorio\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj",
-      "packagesPath": "C:\\Users\\chafm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chafm\\OneDrive\\Escritorio\\GAE_Management\\GAE_BACKEND\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\chafm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
       "projectUniqueName": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj",
       "projectName": "GAE_Management",
       "projectPath": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj",
@@ -8368,7 +8354,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ezequ\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 6799eae37a578a7473877074e405cba0832b37d3
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8458,15 +8443,17 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
->>>>>>> 6799eae37a578a7473877074e405cba0832b37d3
       }
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

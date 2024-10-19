@@ -1025,3 +1025,6 @@ C:\Users\chafm\OneDrive\Escritorio\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\s
 C:\Users\chafm\OneDrive\Escritorio\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\GAE_Mana.906A4B8F.Up2Date
 C:\Users\chafm\OneDrive\Escritorio\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\GAE_Management.genruntimeconfig.cache
 C:\Users\chafm\OneDrive\Escritorio\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\ref\GAE_Management.dll
+C:\Users\ezequ\Desktop\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\ezequ\Desktop\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\System.Web.Http.dll
+C:\Users\ezequ\Desktop\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
