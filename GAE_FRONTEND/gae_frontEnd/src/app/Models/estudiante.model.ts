@@ -2,10 +2,10 @@ export interface EstudianteModel {
     carnet: string;
     nombre: string;
     apellido: string;
-    telefono: String;
-    carrera: String;
-    modalidad: String;
-    correo_estudiante: String;
+    telefono: string;
+    carrera: string;
+    modalidad: string;
+    correo_estudiante: string;
     IdUsuario: number;
   }
   

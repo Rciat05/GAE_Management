@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Importa el CommonModule
 import { EstudianteService } from '../Services/estudiante.service';
 import { EstudianteModel } from '../Models/estudiante.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-estudiantes',
@@ -12,7 +13,7 @@ import { EstudianteModel } from '../Models/estudiante.model';
 export class EstudiantesComponent {
   estudiantes: EstudianteModel[] = [];
 
-  constructor(private estudianteService: EstudianteService) {}
+  constructor(private estudianteService: EstudianteService, private router: Router) {} // Inyecta Router aquí
 
   ngOnInit(): void {
     this.cargarEstudiantes();
@@ -30,5 +31,8 @@ export class EstudiantesComponent {
     );
   }
 
+  NewUser(): void {
+    this.router.navigate(['/usuarios']); 
+  }
   
 }
