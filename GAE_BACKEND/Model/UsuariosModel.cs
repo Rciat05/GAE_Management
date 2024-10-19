@@ -15,7 +15,7 @@ namespace GAE_Management.Model
         public string contrasena { get; set; }
 
         [Required(ErrorMessage = "El tipo de usuario es obligatorio.")]
-        [RegularExpression("Administrador|Docente|Estudiante", ErrorMessage = "El tipo de usuario debe ser 'Administrador', 'Docente' o 'Estudiante'.")]
+        [RegularExpression("Administrador|Profesor|Estudiante", ErrorMessage = "El tipo de usuario debe ser 'Administrador', 'Docente' o 'Estudiante'.")]
         public string tipo_usuario { get; set; }
 
         public DateTime fecha_registro { get; set; }

@@ -3,6 +3,7 @@ import { LoginComponent } from './login/login.component';
 import { EstudiantesComponent } from './estudiantes/estudiantes.component';
 import { AboutComponent } from './about/about.component';
 import { GestionUsuariosComponent } from './gestion-usuarios-component/gestion-usuarios.component';
+import { AddEstudianteComponent } from './add-estudiante/add-estudiante.component';
 
 
 
@@ -11,5 +12,6 @@ export const routes: Routes = [
   { path: 'estudiantes', component: EstudiantesComponent },  
   { path: 'usuarios', component: GestionUsuariosComponent }, 
   { path: '', redirectTo: '/login', pathMatch: 'full' } ,
-  { path: 'about', component: AboutComponent }, 
+  { path: 'about', component: AboutComponent },
+  { path: 'add-estudiante', component: AddEstudianteComponent } 
 ];

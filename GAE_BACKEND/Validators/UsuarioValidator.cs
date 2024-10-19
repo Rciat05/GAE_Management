@@ -17,8 +17,8 @@ namespace GAE_Management.Validators
 
             RuleFor(x => x.tipo_usuario)
                 .NotEmpty().WithMessage("El tipo de usuario es obligatorio.")
-                .Must(tipo => tipo == "Administrador" || tipo == "Docente" || tipo == "Estudiante")
-                .WithMessage("El tipo de usuario debe ser 'Administrador', 'Docente' o 'Estudiante'.");
+                .Must(tipo => tipo == "Administrador" || tipo == "Profesor" || tipo == "Estudiante")
+                .WithMessage("El tipo de usuario debe ser 'Administrador', 'Profesor' o 'Estudiante'.");
         }
     }
 }

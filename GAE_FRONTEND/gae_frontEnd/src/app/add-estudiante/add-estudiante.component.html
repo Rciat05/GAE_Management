@@ -1,0 +1,39 @@
+<h2>Agregar Nuevo Estudiante</h2>
+<form (ngSubmit)="onSubmit()" #estudianteForm="ngForm">
+  <div>
+    <label for="carnet">Carnet</label>
+    <input
+      type="text"
+      id="carnet"
+      required
+      [(ngModel)]="estudiante.carnet"
+      name="carnet"
+    />
+  </div>
+
+  <div>
+    <label for="nombre">Nombre</label>
+    <input
+      type="text"
+      id="nombre"
+      required
+      [(ngModel)]="estudiante.nombre"
+      name="nombre"
+    />
+  </div>
+
+  <div>
+    <label for="apellido">Apellido</label>
+    <input
+      type="text"
+      id="apellido"
+      required
+      [(ngModel)]="estudiante.apellido"
+      name="apellido"
+    />
+  </div>
+
+  <!-- Continúa con otros campos como teléfono, carrera, etc. -->
+
+  <button type="submit" [disabled]="!estudianteForm.form.valid">Agregar</button>
+</form>

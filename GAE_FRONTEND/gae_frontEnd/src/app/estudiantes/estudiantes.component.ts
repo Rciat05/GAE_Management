@@ -7,6 +7,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { NgFor } from '@angular/common';
 
+
 @Component({
   selector: 'app-estudiantes',
   standalone: true,
@@ -41,5 +42,12 @@ export class EstudiantesComponent {
   NewUser(): void {
     this.router.navigate(['/usuarios']); 
   }
+
+
+  agregarEstudiante(): void {
+    // Navegar a la ruta del formulario de agregar estudiante
+    this.router.navigate(['/add-estudiante']);
+  }
+  
   
 }

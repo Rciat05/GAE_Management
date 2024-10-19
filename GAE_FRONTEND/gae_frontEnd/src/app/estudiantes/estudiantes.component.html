@@ -12,7 +12,11 @@
         <!-- Contenido del dashboard -->
         <h3 class="mt-3">Dashboard</h3>
         <ul>
-          <li><a href="#">Opción 1</a></li>
+          <li>
+            <button class="btn btn-secondary center" (click)="NewUser()">
+              Agregar Usuario
+            </button>
+          </li>
           <li><a href="#">Opción 2</a></li>
           <li><a href="#">Opción 3</a></li>
         </ul>
@@ -21,11 +25,8 @@
       <mat-sidenav-content>
         <div class="container mt-5">
           <div class="d-flex justify-content-start mt-3">
-            <button class="btn btn-primary" (click)="cargarEstudiantes()">
+            <button class="btn btn-primary" (click)="agregarEstudiante()">
               Agregar Estudiante
-            </button>
-            <button class="btn btn-secondary" (click)="NewUser()">
-              Agregar Usuario
             </button>
           </div>
           <h2 class="text-center mb-4">Listado de Estudiantes</h2>
