@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\chafm\\OneDrive\\Escritorio\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chafm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj",
+        "projectName": "GAE_Management",
+        "projectPath": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\GAE_Management.csproj",
+        "packagesPath": "C:\\Users\\ezequ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ezequ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 6799eae37a578a7473877074e405cba0832b37d3
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,7 +121,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 6799eae37a578a7473877074e405cba0832b37d3
         }
       }
     }
