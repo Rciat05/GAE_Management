@@ -3,12 +3,19 @@ import { CommonModule } from '@angular/common'; // Importa el CommonModule
 import { EstudianteService } from '../Services/estudiante.service';
 import { EstudianteModel } from '../Models/estudiante.model';
 import { Router } from '@angular/router';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-estudiantes',
   standalone: true,
   templateUrl: './estudiantes.component.html',
-  imports: [CommonModule]
+  styleUrls: ['./estudiantes.component.css'],
+  imports: [CommonModule,  
+    MatSidenavModule,   
+    MatButtonModule,   
+    NgFor]
 })
 export class EstudiantesComponent {
   estudiantes: EstudianteModel[] = [];

@@ -1,0 +1,32 @@
+.example-container {
+    height: 100vh;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+    background: #3f51b5;
+    color: white;
+  }
+  
+  mat-sidenav h3 {
+    margin-left: 20px;
+  }
+  
+  mat-sidenav ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  mat-sidenav ul li {
+    margin: 15px 0;
+  }
+  
+  mat-sidenav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  mat-sidenav ul li a:hover {
+    text-decoration: underline;
+  }
+  

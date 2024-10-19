@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Validators"
   ],
-  "SelectedNode": "\\GAE_Management.sln",
+  "SelectedNode": "\\Validators\\UsuarioValidator.cs",
   "PreviewInSolutionExplorer": false
 }
