@@ -87,6 +87,13 @@ namespace GAE_Management.Controllers
             return Ok(usuario); // Si las credenciales son correctas
         }
 
+        // Ruta para obtener todos los usuarios de tipo estudiante: api/v1/usuarios/estudiantes
+        [HttpGet("estudiantes")]
+        public async Task<IActionResult> GetUsuariosEstudiantes()
+        {
+            var estudiantes = await _usuarioService.GetEstudiantes();
+            return Ok(estudiantes);
+        }
 
     }
 }

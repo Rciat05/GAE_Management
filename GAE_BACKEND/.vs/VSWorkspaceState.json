@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Data",
+    "\\Data\\Services",
     "\\Validators"
   ],
-  "SelectedNode": "\\appsettings.json",
+  "SelectedNode": "\\Data\\Services\\EstudianteService.cs",
   "PreviewInSolutionExplorer": false
 }

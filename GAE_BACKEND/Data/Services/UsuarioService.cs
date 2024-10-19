@@ -100,7 +100,14 @@ namespace GAE_Management.Data.Services
             }
         }
 
-
+        public async Task<IEnumerable<UsuariosModel>> GetEstudiantes()
+        {
+            using (IDbConnection db = new SqlConnection(_connectionString))
+            {
+                var sql = "SELECT id_usuario, correo, contrasena, tipo_usuario, fecha_registro FROM Usuarios WHERE tipo_usuario = 'Estudiante'";
+                return await db.QueryAsync<UsuariosModel>(sql);
+            }
+        }
 
     }
 }

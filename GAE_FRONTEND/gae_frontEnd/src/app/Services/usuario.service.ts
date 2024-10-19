@@ -48,6 +48,10 @@ export class UsuarioService {
     }, { headers });
 }
 
-  
+  // En tu servicio UsuarioService
+getUsuariosEstudiantes(): Observable<UsuarioModel[]> {
+  return this.http.get<UsuarioModel[]>(`${this.apiUrl}/estudiantes`);
+}
+
 
 }

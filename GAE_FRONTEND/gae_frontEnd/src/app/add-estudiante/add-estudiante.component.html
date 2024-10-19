@@ -1,39 +1,124 @@
-<h2>Agregar Nuevo Estudiante</h2>
-<form (ngSubmit)="onSubmit()" #estudianteForm="ngForm">
-  <div>
-    <label for="carnet">Carnet</label>
-    <input
-      type="text"
-      id="carnet"
-      required
-      [(ngModel)]="estudiante.carnet"
-      name="carnet"
-    />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Agregar Estudiante</title>
+</head>
+<body>
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card" style="width: 400px;">
+      <div class="card-body">
+        <h2 class="card-title text-center">Agregar Nuevo Estudiante</h2>
+        <form (ngSubmit)="onSubmit()" #estudianteForm="ngForm">
+          <div class="form-group">
+            <label for="carnet">Carnet</label>
+            <input
+              type="text"
+              id="carnet"
+              class="form-control"
+              required
+              [(ngModel)]="estudiante.carnet"
+              name="carnet"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              class="form-control"
+              required
+              [(ngModel)]="estudiante.nombre"
+              name="nombre"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              id="apellido"
+              class="form-control"
+              required
+              [(ngModel)]="estudiante.apellido"
+              name="apellido"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input
+              type="text"
+              id="telefono"
+              class="form-control"
+              required
+              [(ngModel)]="estudiante.telefono"
+              name="telefono"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="carrera">Carrera</label>
+            <input
+              type="text"
+              id="carrera"
+              class="form-control"
+              required
+              [(ngModel)]="estudiante.carrera"
+              name="carrera"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="modalidad">Modalidad</label>
+            <input
+              type="text"
+              id="modalidad"
+              class="form-control"
+              required
+              [(ngModel)]="estudiante.modalidad"
+              name="modalidad"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="correo_estudiante">Correo Estudiante</label>
+            <input
+              type="email"
+              id="correo_estudiante"
+              class="form-control"
+              required
+              [(ngModel)]="estudiante.correo_estudiante"
+              name="correo_estudiante"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="IdUsuario">Seleccionar Usuario</label>
+            <select
+              id="IdUsuario"
+              class="form-control"
+              required
+              [(ngModel)]="estudiante.IdUsuario"
+              name="IdUsuario"
+            >
+            <option *ngFor="let usuario of usuarios" [value]="usuario.id_usuario">{{ usuario.correo }}</option>
+
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" [disabled]="!estudianteForm.form.valid">Agregar</button>
+        </form>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <label for="nombre">Nombre</label>
-    <input
-      type="text"
-      id="nombre"
-      required
-      [(ngModel)]="estudiante.nombre"
-      name="nombre"
-    />
-  </div>
-
-  <div>
-    <label for="apellido">Apellido</label>
-    <input
-      type="text"
-      id="apellido"
-      required
-      [(ngModel)]="estudiante.apellido"
-      name="apellido"
-    />
-  </div>
-
-  <!-- Continúa con otros campos como teléfono, carrera, etc. -->
-
-  <button type="submit" [disabled]="!estudianteForm.form.valid">Agregar</button>
-</form>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
