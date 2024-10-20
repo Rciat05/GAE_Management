@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [FormsModule, CommonModule]
 })
+
 export class AddEstudianteComponent implements OnInit {
   estudiante: EstudianteModel = {
     carnet: '',
@@ -35,7 +36,8 @@ export class AddEstudianteComponent implements OnInit {
   cargarUsuariosEstudiantes(): void {
     this.usuarioService.getUsuariosEstudiantes().subscribe(
       (data) => {
-        this.usuarios = data; // Asumiendo que obtienes una lista de estudiantes
+        this.usuarios = data; 
+        console.log('Usuarios cargados: ', this.usuarios);
       },
       (error) => {
         console.error('Error al obtener estudiantes:', error);
@@ -44,6 +46,7 @@ export class AddEstudianteComponent implements OnInit {
   }
 
   onSubmit(): void {
+    console.log(this.estudiante);
     this.estudianteService.addEstudiante(this.estudiante).subscribe(
       () => {
         console.log('Estudiante agregado exitosamente');

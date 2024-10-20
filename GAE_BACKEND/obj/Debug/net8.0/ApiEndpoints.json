@@ -181,6 +181,16 @@
   },
   {
     "ContainingType": "GAE_Management.Controllers.UsuarioController",
+    "Method": "GetUsuariosEstudiantes",
+    "RelativePath": "api/v1/usuarios/estudiantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GAE_Management.Controllers.UsuarioController",
     "Method": "GetUsuarios",
     "RelativePath": "api/v1/usuarios/get",
     "HttpMethod": "GET",

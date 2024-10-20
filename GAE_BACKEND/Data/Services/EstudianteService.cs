@@ -32,6 +32,11 @@ namespace GAE_Management.Service
         {
             using (var connection = new SqlConnection(_connectionString))
             {
+
+                // Agregar un print para depurar el valor de id_usuario
+                Console.WriteLine($"IdUsuario: {estudiante.id_usuario}");
+                
+
                 var query = "sp_InsertarEstudiante";
                 var parameters = new DynamicParameters();
                 parameters.Add("@Carnet", estudiante.Carnet);
@@ -42,6 +47,9 @@ namespace GAE_Management.Service
                 parameters.Add("@Modalidad", estudiante.Modalidad);
                 parameters.Add("@correo_estudiante", estudiante.correo_estudiante);
                 parameters.Add("@IdUsuario", estudiante.id_usuario);
+
+                
+
 
                 connection.Execute(query, parameters, commandType: CommandType.StoredProcedure);
             }
