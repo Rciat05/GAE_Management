@@ -5,13 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-gestion-usuarios',
   templateUrl: './gestion-usuarios.component.html',
   standalone: true, 
   imports: [FormsModule, CommonModule], 
-
 })
 export class GestionUsuariosComponent implements OnInit {
   usuarios: UsuarioModel[] = [];
@@ -57,7 +55,6 @@ export class GestionUsuariosComponent implements OnInit {
       });
     }
   }
-  
 
   editUsuario(usuario: UsuarioModel): void {
     this.usuario = { ...usuario }; 
@@ -71,5 +68,9 @@ export class GestionUsuariosComponent implements OnInit {
 
   limpiarFormulario(): void {
     this.usuario = { id_usuario: 0, correo: '', contrasena: '', tipo_usuario: '', fecha_registro: new Date() };
+  }
+
+  Return(): void {
+    this.router.navigate(['/estudiantes']); 
   }
 }

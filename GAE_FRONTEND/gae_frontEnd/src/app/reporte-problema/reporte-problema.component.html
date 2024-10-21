@@ -1,76 +1,97 @@
 <div class="container mt-5">
-  <h2 class="text-center mb-4">Gestión de Usuarios</h2>
+  <h2 class="text-center mb-4">Gestión de Reportes de Problemas</h2>
+
+  <!-- Formulario para crear o editar reportes -->
   <form (ngSubmit)="onSubmit()">
-    <!-- Campo de correo -->
     <div class="mb-3">
-      <label for="correo" class="form-label">Correo:</label>
-      <input
-        type="email"
-        id="correo"
-        class="form-control"
-        [(ngModel)]="usuario.correo"
-        name="correo"
-        required
-      />
-    </div>
-
-    <!-- Campo de contraseña -->
-    <div class="mb-3">
-      <label for="contrasena" class="form-label">Contraseña:</label>
-      <input
-        type="password"
-        id="contrasena"
-        class="form-control"
-        [(ngModel)]="usuario.contrasena"
-        name="contrasena"
-        required
-      />
-    </div>
-
-    <!-- Selección de tipo de usuario -->
-    <div class="mb-3">
-      <label for="tipo_usuario" class="form-label">Tipo de Usuario:</label>
+      <label for="id_usuario" class="form-label">Estudiante:</label>
       <select
-        id="tipo_usuario"
+        id="id_usuario"
         class="form-control"
-        [(ngModel)]="usuario.tipo_usuario"
-        name="tipo_usuario"
+        [(ngModel)]="reporte.id_usuario"
+        name="id_usuario"
         required
       >
-        <option value="Administrador">Administrador</option>
-        <option value="Profesor">Profesor</option>
-        <option value="Estudiante">Estudiante</option>
+        <option
+          *ngFor="let estudiante of estudiantes"
+          [value]="estudiante.id_usuario"
+        >
+          {{ estudiante.correo }} (ID: {{ estudiante.id_usuario }})
+        </option>
       </select>
     </div>
 
-    <!-- Botón de guardar usuario -->
-    <button type="submit" class="btn btn-primary">Guardar Usuario</button>
+    <div class="mb-3">
+      <label for="descripcion" class="form-label"
+        >Descripción del Problema:</label
+      >
+      <input
+        type="text"
+        id="descripcion"
+        class="form-control"
+        [(ngModel)]="reporte.descripcion"
+        name="descripcion"
+        required
+      />
+    </div>
 
-    <!-- Botón de regresar -->
+    <div class="mb-3">
+      <label for="estado" class="form-label">Estado del Reporte:</label>
+      <select
+        id="estado"
+        class="form-control"
+        [(ngModel)]="reporte.estado"
+        name="estado"
+        required
+      >
+        <option value="pendiente">Pendiente</option>
+        <option value="en proceso">En Proceso</option>
+        <option value="resuelto">Resuelto</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Reporte</button>
+
     <div class="d-flex justify-content-end mb-4">
       <a class="btn btn-danger text-uppercase" (click)="Return()">Regresar →</a>
     </div>
   </form>
 
-  <!-- Tabla de usuarios -->
-  <h3 class="mt-5">Listado de Usuarios</h3>
+  <!-- Tabla de reportes -->
+  <h3 class="mt-5">Listado de Reportes</h3>
   <table class="table table-bordered">
     <thead>
       <tr>
         <th>ID</th>
-        <th>Correo</th>
-        <th>Tipo de Usuario</th>
+        <th>Estudiante</th>
+        <th>Descripción</th>
+        <th>Estado</th>
         <th>Acciones</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let usuario of usuarios">
-        <td>{{ usuario.id_usuario }}</td>
-        <td>{{ usuario.correo }}</td>
-        <td>{{ usuario.tipo_usuario }}</td>
+      <tr *ngFor="let reporte of reportes">
+        <td>{{ reporte.id_reporte }}</td>
+        <td>{{ reporte.id_usuario }}</td>
+        <!-- ID del estudiante -->
+        <td>{{ reporte.descripcion }}</td>
         <td>
-          <!-- Botón de edición -->
-          <button class="btn btn-warning me-2" (click)="editUsuario(usuario)">
+          <span
+            class="badge-warning"
+            [ngClass]="{
+              'badge-warning': reporte.estado === 'pendiente',
+              'badge-info': reporte.estado === 'en proceso',
+              'badge-success': reporte.estado === 'resuelto'
+            }"
+          >
+            {{ reporte.estado | titlecase }}
+          </span>
+        </td>
+        <td class="btn btn-block btn-primary btn-xs">
+          <button
+            class="btn btn-warning me-2"
+            (click)="updateReporteProblema(reporte)"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -84,10 +105,9 @@
               />
             </svg>
           </button>
-          <!-- Botón de eliminación -->
           <button
             class="btn btn-danger"
-            (click)="deleteUsuario(usuario.id_usuario)"
+            (click)="deleteReporte(reporte.id_reporte)"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { NgFor } from '@angular/common';
 
 
+
 @Component({
   selector: 'app-estudiantes',
   standalone: true,
@@ -19,9 +20,14 @@ import { NgFor } from '@angular/common';
     NgFor]
 })
 export class EstudiantesComponent {
+
+
+
   estudiantes: EstudianteModel[] = [];
 
-  constructor(private estudianteService: EstudianteService, private router: Router) {} // Inyecta Router aquí
+  constructor(private estudianteService: EstudianteService, 
+    
+    private router: Router) {} // Inyecta Router aquí
 
   ngOnInit(): void {
     this.cargarEstudiantes();
@@ -48,6 +54,14 @@ export class EstudiantesComponent {
     // Navegar a la ruta del formulario de agregar estudiante
     this.router.navigate(['/add-estudiante']);
   }
+
+  NewReport(): void {
+    this.router.navigate(['/reporte-problema']); 
+  }
+
+  logout() {
+    this.router.navigate(['/login']); 
+    }
   
   
 }

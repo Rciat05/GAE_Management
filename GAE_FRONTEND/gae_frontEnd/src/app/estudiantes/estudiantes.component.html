@@ -9,16 +9,26 @@
   <body>
     <mat-sidenav-container class="example-container">
       <mat-sidenav mode="side" opened>
-        <!-- Contenido del dashboard -->
-        <h3 class="mt-3">Dashboard</h3>
+        <h3 class="mt-3">GAE</h3>
+        <hr />
         <ul>
           <li>
             <button class="btn btn-secondary center" (click)="NewUser()">
               Agregar Usuario
             </button>
           </li>
-          <li><a href="#">Opción 2</a></li>
-          <li><a href="#">Opción 3</a></li>
+          <hr />
+          <li>
+            <button class="btn btn-secondary center" (click)="NewReport()">
+              Reportar
+            </button>
+          </li>
+          <hr />
+          <li>
+            <button class="btn btn-danger center" (click)="logout()">
+              Cerrar Sesión
+            </button>
+          </li>
         </ul>
       </mat-sidenav>
 
