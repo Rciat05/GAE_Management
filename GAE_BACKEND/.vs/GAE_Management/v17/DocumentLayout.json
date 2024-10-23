@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|c:\\users\\ezequ\\desktop\\gae_management\\gae_backend\\model\\reporteproblemamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|solutionrelative:model\\reporteproblemamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|c:\\users\\ezequ\\desktop\\gae_management\\gae_backend\\controllers\\reporteproblemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|solutionrelative:controllers\\reporteproblemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|c:\\users\\ezequ\\desktop\\gae_management\\gae_backend\\data\\services\\reporteproblemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|solutionrelative:data\\services\\reporteproblemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|c:\\users\\ezequ\\desktop\\gae_management\\gae_backend\\validators\\reporteproblemavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|solutionrelative:validators\\reporteproblemavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|c:\\users\\ezequ\\desktop\\gae_management\\gae_backend\\model\\reporteproblemamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|solutionrelative:model\\reporteproblemamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|c:\\users\\ezequ\\desktop\\gae_management\\gae_backend\\controllers\\reporteproblemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|solutionrelative:controllers\\reporteproblemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|c:\\users\\ezequ\\desktop\\gae_management\\gae_backend\\validators\\reporteproblemavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|solutionrelative:validators\\reporteproblemavalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3BFAC1F-177A-4830-A223-042B2966FCF1}|GAE_Management.csproj|c:\\users\\ezequ\\desktop\\gae_management\\gae_backend\\validators\\estudiantevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ReporteProblemaValidator.cs",
               "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Validators\\ReporteProblemaValidator.cs",
               "RelativeDocumentMoniker": "Validators\\ReporteProblemaValidator.cs",
@@ -122,33 +122,33 @@
               "RelativeDocumentMoniker": "Data\\Services\\ReporteProblemaService.cs",
               "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Data\\Services\\ReporteProblemaService.cs",
               "RelativeToolTip": "Data\\Services\\ReporteProblemaService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAwwCgAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T04:15:04.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ReporteProblemaController.cs",
               "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\ReporteProblemaController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReporteProblemaController.cs",
               "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Controllers\\ReporteProblemaController.cs",
               "RelativeToolTip": "Controllers\\ReporteProblemaController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T04:15:04.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ReporteProblemaModel.cs",
               "DocumentMoniker": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs",
               "RelativeDocumentMoniker": "Model\\ReporteProblemaModel.cs",
               "ToolTip": "C:\\Users\\ezequ\\Desktop\\GAE_Management\\GAE_BACKEND\\Model\\ReporteProblemaModel.cs",
               "RelativeToolTip": "Model\\ReporteProblemaModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T04:15:03.964Z",
               "EditorCaption": ""
