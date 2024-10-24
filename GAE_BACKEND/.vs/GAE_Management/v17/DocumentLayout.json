@@ -102,8 +102,7 @@
               "RelativeToolTip": "Data\\Services\\UsuarioService.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAAwHEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:04.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:04.034Z"
             },
             {
               "$type": "Document",
@@ -115,8 +114,7 @@
               "RelativeToolTip": "Model\\EstudianteModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:04.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:04.018Z"
             },
             {
               "$type": "Document",
@@ -128,8 +126,7 @@
               "RelativeToolTip": "Data\\Services\\ReporteProblemaService.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAAAFUAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:04.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:04.044Z"
             },
             {
               "$type": "Document",
@@ -141,8 +138,7 @@
               "RelativeToolTip": "Data\\Services\\EstudianteService.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAA3wFQAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:04.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:04.026Z"
             },
             {
               "$type": "Document",
@@ -154,8 +150,7 @@
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:04.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:04.013Z"
             },
             {
               "$type": "Document",
@@ -167,8 +162,7 @@
               "RelativeToolTip": "Controllers\\ReporteProblemaController.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAwBcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:04.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:04.03Z"
             },
             {
               "$type": "Document",
@@ -178,7 +172,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Desktop\\Angular\\GAE_Management\\GAE_BACKEND\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T04:15:03.991Z",
               "EditorCaption": ""
@@ -193,8 +187,7 @@
               "RelativeToolTip": "Model\\LoginRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:03.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:03.987Z"
             },
             {
               "$type": "Document",
@@ -206,8 +199,7 @@
               "RelativeToolTip": "Model\\ReporteProblemaModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:03.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:03.964Z"
             },
             {
               "$type": "Document",
@@ -219,8 +211,7 @@
               "RelativeToolTip": "Model\\UsuariosModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:04.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:04.007Z"
             },
             {
               "$type": "Document",
@@ -232,8 +223,7 @@
               "RelativeToolTip": "Controllers\\EstudianteController.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAqwCcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T04:15:03.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:03.984Z"
             },
             {
               "$type": "Document",
@@ -245,8 +235,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-19T04:15:03.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T04:15:03.98Z"
             },
             {
               "$type": "Document",

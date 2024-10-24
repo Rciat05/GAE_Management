@@ -27,7 +27,7 @@ export class EstudiantesComponent {
 
   constructor(private estudianteService: EstudianteService, 
     
-    private router: Router) {} // Inyecta Router aquí
+    private router: Router) {} 
 
   ngOnInit(): void {
     this.cargarEstudiantes();
