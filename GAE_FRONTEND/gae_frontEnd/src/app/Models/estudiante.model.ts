@@ -6,6 +6,6 @@ export interface EstudianteModel {
     carrera: string;
     modalidad: string;
     correo_estudiante: string;
-    IdUsuario: number;
+    id_usuario: number;
   }
   

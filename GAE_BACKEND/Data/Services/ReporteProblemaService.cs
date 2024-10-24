@@ -82,5 +82,17 @@ namespace GAE_Management.Service
                 connection.Execute(query, parameters, commandType: CommandType.StoredProcedure);
             }
         }
+
+        public IEnumerable<ReporteProblemaModel> GetReportesByUsuario(int id_usuario)
+        {
+            string query = "SELECT * FROM ReportesProblemas WHERE id_usuario = @id_usuario";
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                return connection.Query<ReporteProblemaModel>(query, new { id_usuario });
+            }
+        }
+
     }
 }

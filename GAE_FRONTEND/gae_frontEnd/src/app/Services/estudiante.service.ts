@@ -3,7 +3,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { EstudianteModel } from '../Models/estudiante.model';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -17,10 +16,10 @@ export class EstudianteService {
     return this.http.get<EstudianteModel[]>(`${this.apiUrl}/get`);
   }
 
-  // POST: Crear estudiante
+  // POST: Crear estudiante (con manejo de respuesta en texto)
   addEstudiante(estudiante: EstudianteModel): Observable<any> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    return this.http.post(`${this.apiUrl}/add`, estudiante, { headers });
+    return this.http.post(`${this.apiUrl}/add`, estudiante, { headers, responseType: 'text' });
   }
 
   // GET: Obtener estudiante por carnet

@@ -7,8 +7,7 @@ import { UsuarioModel } from '../Models/usuario.model';
   providedIn: 'root'
 })
 export class UsuarioService {
-
-  private apiUrl = 'http://localhost:5210/api/v1/usuarios';  
+  private apiUrl = 'http://localhost:5210/api/v1/usuarios';
 
   constructor(private http: HttpClient) { }
 
@@ -39,20 +38,17 @@ export class UsuarioService {
     return this.http.delete<void>(`${this.apiUrl}/delete/${id}`);
   }
 
-
+  // Login
   login(correo: string, contrasena: string): Observable<UsuarioModel> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     return this.http.post<UsuarioModel>(`${this.apiUrl}/login`, { 
-        correo: correo, 
-        contrasena: contrasena 
+      correo: correo, 
+      contrasena: contrasena 
     }, { headers });
-}
+  }
 
-  // En tu servicio UsuarioService
-getUsuariosEstudiantes(): Observable<UsuarioModel[]> {
-  return this.http.get<UsuarioModel[]>(`${this.apiUrl}/estudiantes`);
-}
-
-
-
+  // Obtener todos los usuarios de tipo estudiante
+  getUsuariosEstudiantes(): Observable<UsuarioModel[]> {
+    return this.http.get<UsuarioModel[]>(`${this.apiUrl}/estudiantes`);
+  }
 }

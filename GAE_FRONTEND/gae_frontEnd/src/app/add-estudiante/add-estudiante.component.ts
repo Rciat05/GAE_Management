@@ -23,7 +23,7 @@ export class AddEstudianteComponent implements OnInit {
     carrera: '',
     modalidad: '',
     correo_estudiante: '',
-    IdUsuario: 0
+    id_usuario: 0
   };
   usuarios: UsuarioModel[] = [];
 

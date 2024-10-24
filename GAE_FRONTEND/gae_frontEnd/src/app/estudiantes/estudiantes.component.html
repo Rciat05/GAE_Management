@@ -1,71 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>estudiante</title>
-    <link rel="stylesheet" href="estudiantes.component.css" />
-  </head>
-  <body>
-    <mat-sidenav-container class="example-container">
-      <mat-sidenav mode="side" opened>
-        <h3 class="mt-3">GAE</h3>
-        <hr />
-        <ul>
-          <li>
-            <button class="btn btn-secondary center" (click)="NewUser()">
-              Agregar Usuario
-            </button>
-          </li>
-          <hr />
-          <li>
-            <button class="btn btn-secondary center" (click)="NewReport()">
-              Reportar
-            </button>
-          </li>
-          <hr />
-          <li>
-            <button class="btn btn-danger center" (click)="logout()">
-              Cerrar Sesión
-            </button>
-          </li>
-        </ul>
-      </mat-sidenav>
-
-      <mat-sidenav-content>
-        <div class="container mt-5">
-          <div class="d-flex justify-content-start mt-3">
-            <button class="btn btn-primary" (click)="agregarEstudiante()">
-              Agregar Estudiante
-            </button>
-          </div>
-          <h2 class="text-center mb-4">Listado de Estudiantes</h2>
-          <table class="table table-bordered table-striped">
-            <thead class="thead-dark">
-              <tr>
-                <th>Carnet</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Teléfono</th>
-                <th>Carrera</th>
-                <th>Modalidad</th>
-                <th>Correo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let estudiante of estudiantes">
-                <td>{{ estudiante.carnet }}</td>
-                <td>{{ estudiante.nombre }}</td>
-                <td>{{ estudiante.apellido }}</td>
-                <td>{{ estudiante.telefono }}</td>
-                <td>{{ estudiante.carrera }}</td>
-                <td>{{ estudiante.modalidad }}</td>
-                <td>{{ estudiante.correo_estudiante }}</td>
-              </tr>
-            </tbody>
-          </table>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+    <h3 class="mt-3">GAE</h3>
+    <hr />
+    <ul>
+      <li>
+        <div class="text-center">
+          <button class="btn btn-secondary mb-2" (click)="NewUser()">
+            Agregar Usuario
+          </button>
         </div>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  </body>
-</html>
+      </li>
+      <hr />
+      <li>
+        <div class="text-center">
+          <button class="btn btn-secondary mb-2" (click)="NewReport()">
+            Reportar
+          </button>
+        </div>
+      </li>
+      <hr />
+      <li>
+        <div class="text-center">
+          <button class="btn btn-danger mb-2" (click)="logout()">
+            Cerrar Sesión
+          </button>
+        </div>
+      </li>
+    </ul>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-start mt-3">
+        <button class="btn btn-primary" (click)="agregarEstudiante()">
+          Agregar Estudiante
+        </button>
+      </div>
+      <h2 class="text-center mb-4">Listado de Estudiantes</h2>
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>Carnet</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Carrera</th>
+            <th>Modalidad</th>
+            <th>Correo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let estudiante of estudiantes">
+            <td>{{ estudiante.carnet }}</td>
+            <td>{{ estudiante.nombre }}</td>
+            <td>{{ estudiante.apellido }}</td>
+            <td>{{ estudiante.telefono }}</td>
+            <td>{{ estudiante.carrera }}</td>
+            <td>{{ estudiante.modalidad }}</td>
+            <td>{{ estudiante.correo_estudiante }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1288,3 +1288,7 @@ C:\Users\jorge\Desktop\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\refint\GAE_Ma
 C:\Users\jorge\Desktop\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\GAE_Management.pdb
 C:\Users\jorge\Desktop\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\GAE_Management.genruntimeconfig.cache
 C:\Users\jorge\Desktop\GAE_Management\GAE_BACKEND\obj\Debug\net8.0\ref\GAE_Management.dll
+C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\System.Web.Http.dll
+C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

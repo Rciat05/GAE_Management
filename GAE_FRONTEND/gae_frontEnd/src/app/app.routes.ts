@@ -6,9 +6,6 @@ import { GestionUsuariosComponent } from './gestion-usuarios-component/gestion-u
 import { AddEstudianteComponent } from './add-estudiante/add-estudiante.component';
 import { ReporteProblemaComponent } from './reporte-problema/reporte-problema.component';
 
-
-
-
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'estudiantes', component: EstudiantesComponent},  
