@@ -7,6 +7,7 @@ import { EstudianteModel } from '../Models/estudiante.model';
   providedIn: 'root'
 })
 export class EstudianteService {
+
   private apiUrl = 'http://localhost:5210/api/v1/Estudiantes'; 
 
   constructor(private http: HttpClient) { }
@@ -30,11 +31,13 @@ export class EstudianteService {
   // PUT: Actualizar estudiante
   updateEstudiante(estudiante: EstudianteModel): Observable<any> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    return this.http.put(`${this.apiUrl}/update`, estudiante, { headers });
+    return this.http.put(`${this.apiUrl}/update`, estudiante, { headers, responseType: 'text' });
   }
 
   // DELETE: Eliminar estudiante
-  deleteEstudiante(carnet: string): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/delete/${carnet}`);
+  deleteEstudiante(carnet: string) {
+    return this.http.delete(`http://localhost:5210/api/v1/Estudiantes/delete/${carnet}`, { responseType: 'text' });
   }
+  
+
 }

@@ -7,6 +7,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
+//imports pdf y excel xd
+import jsPDF from 'jspdf';
+import * as XLSX from 'xlsx';
+
 @Component({
   selector: 'app-reporte-problema',
   templateUrl: './reporte-problema.component.html',
@@ -111,4 +115,76 @@ export class ReporteProblemaComponent implements OnInit {
   Return(): void {
     this.router.navigate(['/estudiantes']); 
   }
+
+
+
+
+//probando si genera pdf y excel 
+exportToPDF(): void {
+  const doc = new jsPDF();
+   // Título del sistema
+  doc.setFont('Helvetica', 'bold');
+  doc.setFontSize(16);
+  doc.text('Sistema GAE - Reportes', 105, 20, { align: 'center' });
+
+  // Línea separadora debajo del título
+  doc.setLineWidth(0.5);
+  doc.line(10, 25, 200, 25);
+
+  let y = 40; // Posición inicial de los elementos después del título
+  doc.setFontSize(12);
+  doc.setFont('Helvetica', 'normal');
+
+  // Encabezados de la tabla
+  doc.text('ID', 10, y);
+  doc.text('Estudiante', 30, y);
+  doc.text('Descripción', 70, y);
+  doc.text('Estado', 150, y);
+  
+  y += 10;
+
+  // Recorre los reportes y añádelos al PDF
+  this.reportes.forEach(reporte => {
+    doc.setFontSize(10);
+    doc.text(reporte.id_reporte.toString(), 10, y);
+    doc.text(reporte.id_usuario.toString(), 30, y);
+    doc.text(reporte.descripcion, 70, y, { maxWidth: 50 }); // Limita el ancho para la descripción
+
+    // Cambia el color del texto según el estado
+  if (reporte.estado === 'pendiente') {
+    doc.setTextColor(255, 99, 71); // Rojo claro
+  } else if (reporte.estado === 'en proceso') {
+    doc.setTextColor(255, 165, 0); // Anaranjado
+  } else if (reporte.estado === 'resuelto') {
+    doc.setTextColor(0, 128, 0); // Verde
+  }
+    
+    doc.text(reporte.estado, 150, y);
+
+     // Restablecer el color del texto a negro para las siguientes líneas
+  doc.setTextColor(0, 0, 0);
+
+
+    y += 20;//espacio hacia abajo, filas
+  });
+
+  // Pie de página u otra información adicional
+  doc.setFontSize(10);
+  doc.text('Reporte generado automáticamente por el sistema GAE', 10, 290);
+
+  // Guardar el PDF
+  doc.save('reportes.pdf');
+}
+
+
+
+
+exportToExcel(): void {
+  const worksheet = XLSX.utils.json_to_sheet(this.reportes);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, 'Reportes');
+
+  XLSX.writeFile(workbook, 'reportes.xlsx');
+}
+
 }

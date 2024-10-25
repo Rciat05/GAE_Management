@@ -1292,3 +1292,4 @@ C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\System.Net.Http.F
 C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\System.Web.Http.dll
 C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Desktop\Angular\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ezequ\Desktop\GAE_Management\GAE_BACKEND\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

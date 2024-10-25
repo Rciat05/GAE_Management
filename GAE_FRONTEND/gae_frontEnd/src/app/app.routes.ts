@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { GestionUsuariosComponent } from './gestion-usuarios-component/gestion-usuarios.component';
 import { AddEstudianteComponent } from './add-estudiante/add-estudiante.component';
 import { ReporteProblemaComponent } from './reporte-problema/reporte-problema.component';
+import { EditEstudianteComponent } from './edit-estudiante/edit-estudiante.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' } ,
   { path: 'about', component: AboutComponent },
   { path: 'add-estudiante', component: AddEstudianteComponent },
+  { path: 'edit-estudiante/:carnet', component: EditEstudianteComponent },
   { path: 'reporte-problema', component: ReporteProblemaComponent } 
 ];
