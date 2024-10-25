@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GAE_Management")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+405b698094cac99b421b17e871ea06687c50de48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40acddd3223fc27dd32dd08e37244ac44b376271")]
 [assembly: System.Reflection.AssemblyProductAttribute("GAE_Management")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GAE_Management")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

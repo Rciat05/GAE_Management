@@ -1,32 +1,67 @@
 .example-container {
-    height: 100vh;
-  }
-  
-  mat-sidenav {
-    width: 250px;
-    background: #3f51b5;
-    color: white;
-  }
-  
-  mat-sidenav h3 {
-    margin-left: 20px;
-  }
-  
-  mat-sidenav ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  mat-sidenav ul li {
-    margin: 15px 0;
-  }
-  
-  mat-sidenav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  mat-sidenav ul li a:hover {
-    text-decoration: underline;
-  }
-  
+  height: 100vh;
+}
+
+.menu-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+mat-sidenav {
+  width: 200px;
+  background: #3f51b5;
+  color: white;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+mat-sidenav.opened {
+  width: 250px;
+}
+
+mat-sidenav-content {
+  transition: margin-left 0.3s ease;
+  margin-left: 60px;
+}
+
+mat-sidenav.opened + mat-sidenav-content {
+  margin-left: 250px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  margin: 15px 0;
+}
+
+mat-icon {
+  margin-right: 8px;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: white;
+  justify-content: flex-start;
+}
+
+.btn-icon p {
+  margin-left: 8px;
+  margin: 0;
+  display: none;
+}
+
+.opened .btn-icon p {
+  display: inline;
+}

@@ -7,6 +7,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { NgFor } from '@angular/common';
 import { ChangeDetectorRef } from '@angular/core'; // Importar ChangeDetectorRef
+import { MatIconModule } from '@angular/material/icon';
+// Agrega este módulo a la sección 'imports' de tu NgModule.
 
 //imports pdf y excel xd
 import jsPDF from 'jspdf';
@@ -20,7 +22,8 @@ import * as XLSX from 'xlsx';
   styleUrls: ['./estudiantes.component.css'],
   imports: [CommonModule,  
     MatSidenavModule,   
-    MatButtonModule,   
+    MatButtonModule, 
+    MatIconModule, 
     NgFor]
 })
 export class EstudiantesComponent {
@@ -77,6 +80,11 @@ export class EstudiantesComponent {
     }
   }
   
+  opened = false;
+  toggleSidenav() {
+    this.opened = !this.opened;
+  }
+
   NewUser(): void {
     this.router.navigate(['/usuarios']); 
   }

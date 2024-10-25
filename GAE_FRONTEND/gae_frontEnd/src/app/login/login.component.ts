@@ -27,6 +27,8 @@ export class LoginComponent {
     this.usuarioService.login(this.correo, this.contrasena).subscribe(
       (data) => {
         console.log("Login exitoso", data);
+        // Guardar el rol en localStorage
+        localStorage.setItem('userRole', data.tipo_usuario);
         this.router.navigate(['/estudiantes']);
       },
       (error) => {

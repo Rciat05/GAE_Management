@@ -22,6 +22,8 @@ export class ReporteProblemaComponent implements OnInit {
   estudiantes: UsuarioModel[] = [];  // Lista de estudiantes
   reporte: ReporteProblemaModel = { id_reporte: 0, id_usuario: 0, descripcion: '', fecha_reporte: new Date(), estado: 'pendiente' };
 
+  tipo_usuario: string = ''; // Define el rol del usuario actual
+
   constructor(
     private reporteProblemaService: ReporteProblemaService,
     private usuarioService: UsuarioService,  // Servicio para obtener estudiantes
@@ -29,6 +31,7 @@ export class ReporteProblemaComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    
     this.loadReportes();
     this.loadEstudiantes();  // Cargar la lista de estudiantes
   }
