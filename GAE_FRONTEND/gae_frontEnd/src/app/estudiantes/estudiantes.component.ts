@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 //imports pdf y excel xd
 import jsPDF from 'jspdf';
 import * as XLSX from 'xlsx';
+import { NgxCsvParser, NgxCSVParserError } from 'ngx-csv-parser';
 
 
 @Component({
@@ -35,7 +36,8 @@ export class EstudiantesComponent {
   constructor(private estudianteService: EstudianteService, 
               private router: Router,
               private route: ActivatedRoute,
-              private cdr: ChangeDetectorRef
+              private cdr: ChangeDetectorRef,
+              private ngxCsvParser: NgxCsvParser
             ) {} 
 
   ngOnInit(): void {
@@ -54,6 +56,38 @@ export class EstudiantesComponent {
       }
     );
   }
+
+
+
+  importCSV(event: any): void {
+    const file = event.target.files[0];
+    if (file) {
+      this.ngxCsvParser.parse(file, { header: true, delimiter: ',' })
+        .pipe().subscribe(
+          (result: any[] | NgxCSVParserError) => {
+            if (Array.isArray(result)) {
+              // Procesar los datos y actualizar la lista de estudiantes
+              this.estudiantes = result.map((item: any) => ({
+                carnet: item['carnet'],
+                nombre: item['nombre'],
+                apellido: item['apellido'],
+                telefono: item['telefono'],
+                carrera: item['carrera'],
+                modalidad: item['modalidad'],
+                correo_estudiante: item['correo_estudiante'],
+                id_usuario: parseInt(item['id_usuario'], 10) || 0  // Usa el ID si está en el CSV o asigna 0
+              }));
+            } else {
+              console.error('Error al importar CSV:', result);
+            }
+          },
+          (error: NgxCSVParserError) => {
+            console.error('Error al importar CSV:', error);
+          }
+        );
+    }
+  }
+
 
   
   editarEstudiante(estudiante: EstudianteModel): void {
@@ -142,7 +176,5 @@ export class EstudiantesComponent {
     
       XLSX.writeFile(workbook, 'estudiantes.xlsx');
     }
-    
-
 
 }
