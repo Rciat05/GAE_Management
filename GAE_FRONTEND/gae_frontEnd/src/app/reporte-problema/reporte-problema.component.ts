@@ -23,6 +23,7 @@ export class ReporteProblemaComponent implements OnInit {
   reporte: ReporteProblemaModel = { id_reporte: 0, id_usuario: 0, descripcion: '', fecha_reporte: new Date(), estado: 'pendiente' };
 
   tipo_usuario: string = ''; // Define el rol del usuario actual
+  searchText: string= '';
 
   constructor(
     private reporteProblemaService: ReporteProblemaService,
@@ -189,5 +190,20 @@ exportToExcel(): void {
 
   XLSX.writeFile(workbook, 'reportes.xlsx');
 }
+
+
+filtrarReportes(): ReporteProblemaModel[] {
+  if (!this.searchText) {
+    return this.reportes; 
+  }
+
+  const texto = this.searchText.toLowerCase();
+  return this.reportes.filter(reporte =>
+    reporte.id_reporte.toString().includes(texto) ||
+    reporte.estado.toLowerCase().includes(texto) 
+
+  );
+}
+
 
 }

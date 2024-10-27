@@ -116,7 +116,12 @@
           (change)="importCSV($event)"
         />
       </div>
+      <br />
       <h2 class="text-center mb-4">Listado de Estudiantes</h2>
+      <input [(ngModel)]="searchText" placeholder="Buscar estudiante" />
+
+      <hr />
+      <br />
       <table class="table table-bordered table-striped">
         <thead class="thead-dark">
           <tr>
@@ -131,7 +136,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let estudiante of estudiantes">
+          <tr *ngFor="let estudiante of filtrarEstudiantes()">
             <td>{{ estudiante.carnet }}</td>
             <td>{{ estudiante.nombre }}</td>
             <td>{{ estudiante.apellido }}</td>
@@ -139,7 +144,8 @@
             <td>{{ estudiante.carrera }}</td>
             <td>{{ estudiante.modalidad }}</td>
             <td>{{ estudiante.correo_estudiante }}</td>
-            <td>
+
+            <td class="btn btn-block btn-primary btn-xs">
               <!-- Botón de editar -->
               <button
                 class="btn btn-warning me-2"
@@ -181,6 +187,9 @@
           </tr>
         </tbody>
       </table>
+      <br />
+      <br />
+      <br />
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

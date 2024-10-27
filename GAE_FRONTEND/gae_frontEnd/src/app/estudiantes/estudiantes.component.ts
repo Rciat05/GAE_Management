@@ -8,12 +8,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { NgFor } from '@angular/common';
 import { ChangeDetectorRef } from '@angular/core'; // Importar ChangeDetectorRef
 import { MatIconModule } from '@angular/material/icon';
+
 // Agrega este módulo a la sección 'imports' de tu NgModule.
 
 //imports pdf y excel xd
 import jsPDF from 'jspdf';
 import * as XLSX from 'xlsx';
 import { NgxCsvParser, NgxCSVParserError } from 'ngx-csv-parser';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -22,6 +24,7 @@ import { NgxCsvParser, NgxCSVParserError } from 'ngx-csv-parser';
   templateUrl: './estudiantes.component.html',
   styleUrls: ['./estudiantes.component.css'],
   imports: [CommonModule,  
+    FormsModule,
     MatSidenavModule,   
     MatButtonModule, 
     MatIconModule, 
@@ -32,6 +35,7 @@ export class EstudiantesComponent {
 
 
   estudiantes: EstudianteModel[] = [];
+searchText: string = '';
 
   constructor(private estudianteService: EstudianteService, 
               private router: Router,
@@ -59,34 +63,32 @@ export class EstudiantesComponent {
 
 
 
-  importCSV(event: any): void {
-    const file = event.target.files[0];
-    if (file) {
-      this.ngxCsvParser.parse(file, { header: true, delimiter: ',' })
-        .pipe().subscribe(
-          (result: any[] | NgxCSVParserError) => {
-            if (Array.isArray(result)) {
-              // Procesar los datos y actualizar la lista de estudiantes
-              this.estudiantes = result.map((item: any) => ({
-                carnet: item['carnet'],
-                nombre: item['nombre'],
-                apellido: item['apellido'],
-                telefono: item['telefono'],
-                carrera: item['carrera'],
-                modalidad: item['modalidad'],
-                correo_estudiante: item['correo_estudiante'],
-                id_usuario: parseInt(item['id_usuario'], 10) || 0  // Usa el ID si está en el CSV o asigna 0
-              }));
-            } else {
-              console.error('Error al importar CSV:', result);
+  importCSV(evt: any): void {
+    const file = evt.target.files[0];
+    this.ngxCsvParser.parse(file, { header: true, delimiter: ',' })
+      .subscribe((result) => {
+        // Verificamos si result es de tipo array
+        if (Array.isArray(result)) {
+          result.forEach((estudiante) => {
+            // Validamos el formato de datos para evitar problemas de estructura.
+            if (estudiante.carnet && estudiante.nombre && estudiante.apellido) {
+              this.estudiantes.push(estudiante); // Añadimos a la lista temporal
+              // Guardamos en el backend si hay una API, o directamente en la tabla.
+              this.estudianteService.addEstudiante(estudiante).subscribe(() => {
+                this.cargarEstudiantes(); // Refrescamos la tabla
+              });
             }
-          },
-          (error: NgxCSVParserError) => {
-            console.error('Error al importar CSV:', error);
-          }
-        );
-    }
+          });
+        } else {
+          // Manejo de error si result es de tipo NgxCSVParserError
+          console.error('Error al importar el archivo CSV:', result);
+        }
+      }, (error: NgxCSVParserError) => {
+        console.error('Error al importar el archivo CSV:', error);
+      });
   }
+  
+
 
 
   
@@ -113,7 +115,25 @@ export class EstudiantesComponent {
       );
     }
   }
+
+
+  filtrarEstudiantes(): EstudianteModel[] {
+    if (!this.searchText) {
+      return this.estudiantes; // Si no hay texto de búsqueda, mostrar todos los estudiantes
+    }
   
+    const texto = this.searchText.toLowerCase();
+    return this.estudiantes.filter(estudiante =>
+      estudiante.carnet.toLowerCase().includes(texto) ||
+      estudiante.nombre.toLowerCase().includes(texto) ||
+      estudiante.apellido.toLowerCase().includes(texto) ||
+      estudiante.carrera.toLowerCase().includes(texto)
+    );
+  }
+  
+
+
+
   opened = false;
   toggleSidenav() {
     this.opened = !this.opened;

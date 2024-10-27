@@ -97,6 +97,13 @@
 
   <!-- Tabla de reportes -->
   <h3 class="mt-5">Listado de Reportes</h3>
+  <br />
+  <input [(ngModel)]="searchText" placeholder="Buscar tipo de reportes" />
+  <hr />
+
+  <br />
+  <br />
+  <br />
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -108,7 +115,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let reporte of reportes">
+      <tr *ngFor="let reporte of filtrarReportes()">
         <td>{{ reporte.id_reporte }}</td>
         <td>{{ reporte.id_usuario }}</td>
         <!-- ID del estudiante -->

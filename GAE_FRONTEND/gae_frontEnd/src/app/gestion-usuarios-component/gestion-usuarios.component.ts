@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 export class GestionUsuariosComponent implements OnInit {
   usuarios: UsuarioModel[] = [];
   usuario: UsuarioModel = { id_usuario: 0, correo: '', contrasena: '', tipo_usuario: '', fecha_registro: new Date() };
+  searchText: string='';
 
   constructor(private usuarioService: UsuarioService, private router: Router) {}
 
@@ -31,6 +32,7 @@ export class GestionUsuariosComponent implements OnInit {
       }
     );
   }
+
 
   onSubmit(): void {
     if (this.usuario.id_usuario) {
@@ -73,4 +75,18 @@ export class GestionUsuariosComponent implements OnInit {
   Return(): void {
     this.router.navigate(['/estudiantes']); 
   }
+
+  filtrarUsuario(): UsuarioModel[] {
+    if (!this.searchText) {
+      return this.usuarios; // Si no hay texto de búsqueda, mostrar todos los estudiantes
+    }
+  
+    const texto = this.searchText.toLowerCase();
+    return this.usuarios.filter(usuarios =>
+      usuarios.id_usuario.toString().includes(texto) ||
+      usuarios.correo.toLowerCase().includes(texto)
+    );
+  }
 }
+
+
